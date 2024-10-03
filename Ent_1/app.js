@@ -8,8 +8,8 @@ class Alumno {
     }
 
     // Método para mostrar los detalles del alumno
-    mostrarInfo() {
-        return `Alumno: ${this.nombre} ${this.apellido}, Edad: ${this.edad}, Dirección: ${this.direccion}`;
+    mostrarAlumnx() {
+        return `Alumnx: ${this.nombre} ${this.apellido}, Edad: ${this.edad}, Dirección: ${this.direccion}`;
     }
 }
 
@@ -26,14 +26,14 @@ function inscribirAlumno() {
 
     // Mostrar la información del alumno inscrito
     const resultado = document.getElementById("resultado-alumno");
-    resultado.textContent = nuevoAlumno.mostrarInfo();
+    resultado.textContent = nuevoAlumno.mostrarAlumnx();
 }
 
 // Ejercicio 2: Verificar si una fecha corresponde a Navidad
 function verificarNavidad() {
-    const fechaIngresada = document.getElementById("fecha").value; // Obtiene el valor del input
+    const fechaIngresada = document.getElementById("fecha").value;
     const fecha = new Date(fechaIngresada);
-    const resultado = document.getElementById("resultado-navidad"); // Selecciona el <p> donde se mostrará el resultado
+    const resultado = document.getElementById("resultado-navidad");
 
     if (fecha.getMonth() === 11 && fecha.getDate() === 25) {
         resultado.textContent = "¡Es Navidad! Felicidades. 😃✔🎅";
@@ -47,7 +47,7 @@ function verificarNumerosMenores() {
     const num1 = parseInt(document.getElementById("num1").value);
     const num2 = parseInt(document.getElementById("num2").value);
     const num3 = parseInt(document.getElementById("num3").value);
-    const resultado = document.getElementById("resultado-numeros"); // Selecciona el <p> donde se mostrará el resultado
+    const resultado = document.getElementById("resultado-numeros");
 
     if (num1 < 10 && num2 < 10 && num3 < 10) {
         resultado.textContent = "Todos los números son menores a diez.";
@@ -55,3 +55,4 @@ function verificarNumerosMenores() {
         resultado.textContent = "No todos los números son menores a diez.";
     }
 }
+
