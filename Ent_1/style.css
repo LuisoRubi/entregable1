@@ -10,6 +10,11 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: Cormorant Garamond, sans-serif;
     background-color: black;
 }
 
@@ -55,10 +60,75 @@ body {
 h2.hello{
     font-size: 30px;
     margin: 15px 0;
-    font-style: italic;
 }
 
 h3{
     font-size: 20px;
     font-weight: 700;
+}
+
+.ejercicio-1, .ejercicio-2, .ejercicio-3{
+    border: 1px solid rgb(245, 173, 65);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ejercicio-1 .title, .ejercicio-2 .title, .ejercicio-3 .title{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.ej-box .ejercicio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ej-box .ejercicio img{
+    width: 900px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+/* --- formularios --- */
+form {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+button {
+    background-color: rgb(245, 173, 65);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e4954a;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
 }
